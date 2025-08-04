@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tyler Truong - Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Inter', sans-serif;
+    }
+    body {
+      background: #0f0f0f;
+      color: #f1f1f1;
+      padding: 40px;
+    }
+    .container {
+      display: flex;
+      gap: 40px;
+      align-items: flex-start;
+    }
+    .sidebar {
+      width: 300px;
+      background: #1e1e1e;
+      padding: 20px;
+      border-radius: 16px;
+    }
+    .avatar {
+      display: block;
+      margin: 0 auto;
+      width: 120px;
+      border-radius: 50%;
+      background: #333;
+      height: 120px;
+      object-fit: cover; 
+    }
+    .info, .section {
+      margin-top: 30px;
+    }
+    .info h2, .section h2 {
+      font-size: 1.2rem;
+      margin-bottom: 10px;
+      color: #ffd700;
+    }
+    .section {
+      background: #1e1e1e;
+      padding: 20px;
+      border-radius: 16px;
+    }
+    .skills img {
+      height: 60px;
+      margin: 10px;
+    }
+    .content {
+      flex: 1;
+    }
+    .service {
+      background: #2c2c2c;
+      padding: 15px;
+      border-radius: 12px;
+      margin-bottom: 15px;
+    }
+    a {
+      color: #00bfff;
+    }
+
+    /* Bullet point fix */
+    ul {
+      list-style-type: disc;
+      padding-left: 20px;
+      margin-top: 10px;
+    }
+
+    li {
+      margin-bottom: 6px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <aside class="sidebar">
+      <img class="avatar" src="images/IMG_0552.jpg" alt="Tyler Truong Avatar">
+      <h1>Tyler Truong</h1>
+      <p>Software Developer</p>
+      <div class="info">
+        <h2>Contact</h2>
+        <p>Email: tylerdktruong@gmail.com</p>
+        <p>Phone: 707-666-5428</p>
+        <p>Location: American Canyon, CA</p>
+        <p><a href="https://linkedin.com/in/tyler-d-truong" target="_blank">LinkedIn</a></p>
+      </div>
+      <div class="info">
+  <h2>About Me</h2>
+  <p>
+    I'm a computer science graduate with skills in Java, C++, Python, and Dart. I’ve worked on apps using Flask and Flutter, and enjoy building software that solves problems. I’m good at coding, teamwork, and clear communication. I’m always ready to learn new things and want to grow by working on exciting, useful projects.
+  </p>
+</div>
+
+      <div class="info">
+        <h2>Interests</h2>
+        <ul>
+          <li>Reading light novels</li>
+          <li>Esports & competitive gaming</li>
+          <li>AI & emerging tech</li>
+        </ul>
+      </div>
+    </aside>
+
+    <main class="content">
+      <section class="section">
+        <h2>Education</h2>
+        <p><strong>University of the Pacific</strong> — B.S. Computer Science (May 2025)</p>
+        <p><strong>American Canyon High School</strong> — Graduated June 2021</p>
+      </section>
+
+      <section class="section">
+  <h2>Projects</h2>
+  <div class="service" style="display: flex; gap: 20px; align-items: flex-start;">
+    <img src="images/wiimage.png" alt="Wi-Eye App Screenshot" style="width:100%; max-width:150px; border-radius:8px;">
+    <div>
+      <strong>Wi-Eye Network Scanner App</strong><br>
+      <p style="margin: 10px 0;">
+        Wi-Eye is a network scanning and monitoring app made for our senior project. It helps users find and check devices connected to the same Wi-Fi network. It can scan IPs, check open ports, guess the device's OS, and send malware alerts if strange activity is found.
+      </p>
+      <p><strong>Tools & Languages Used:</strong></p>
+      <ul>
+        <li>Python – for network scanning scripts</li>
+        <li>Dart & Flutter – to build the mobile app</li>
+        <li>Flask – to run the backend server</li>
+        <li>Nmap – for scanning devices and getting info</li>
+        <li>AI (basic) – for checking traffic and finding suspicious behavior</li>
+        <li>JSON – to store scan results</li>
+        <li>Git – for version control and team work</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<div class="service" style="display: flex; gap: 20px; align-items: flex-start;">
+  <img src="images/workout.png" alt="Fitness Track Pro Screenshot" style="width:100%; max-width:500px; border-radius:8px;">
+  <div>
+    <strong>Fitness Track Pro</strong><br>
+    <p style="margin: 10px 0;">
+      Fitness Track Pro is an easy-to-use fitness app made for all levels—beginners to advanced. It helps people plan, track, and improve their workouts. With custom plans, helpful tips, and a progress calendar, it acts like a personal trainer, fitness log, and coach all in one app.
+    </p>
+    <p><strong>Tools & Languages Used:</strong></p>
+    <ul>
+      <li>Java – Main language for building the app</li>
+      <li>JavaFX – For creating the app's user interface (UI)</li>
+      <li>Scene Builder – To help design screens visually</li>
+      <li>FXML – For linking UI layout with Java code</li>
+      <li>JAR Packaging – For running the app easily as an executable file</li>
+      <li>SQLite – To store user accounts, workouts, and progress data</li>
+      <li>GitHub – For sharing and downloading the app</li>
+    </ul>
+  </div>
+</div>
+
+<div class="service" style="display: flex; gap: 20px; align-items: flex-start;">
+  <img src="images/fighting.png" alt="AOT: Let's Rumble Screenshot" style="width:100%; max-width:500px; border-radius:8px;">
+  <div>
+    <strong>AOT: Let’s Rumble</strong><br>
+    <p style="margin: 10px 0;">
+      AOT: Let’s Rumble is a 2D fighting game made with Java, inspired by Attack on Titan. It lets two players fight each other using characters from the anime, like the Attack Titan or Beast Titan. The game is built for PC and played using one keyboard. Although some features like jumping or special attacks weren’t finished due to time limits, the game still works and gives players a fun way to battle in different maps and use punches, kicks, and blocks.
+    </p>
+    <p><strong>🛠️ Tools & Languages Used:</strong></p>
+    <ul>
+      <li>Java – Main coding language</li>
+      <li>ACM Graphics Library – Used to draw and animate game graphics</li>
+      <li>Blender – Used to create or edit character models and backgrounds</li>
+      <li>Java Swing – Possibly used for menus and interface</li>
+      <li>UML Diagrams – For planning and showing how the code works</li>
+      <li>GitHub – For sharing the game and collaborating as a team</li>
+    </ul>
+  </div>
+</div>
+
+
+
+      <section class="section">
+        <h2>Experience</h2>
+        <p><strong>Veranda LUXE Cinema & IMAX</strong> — Usher (Seasonal)<br>May 2024 – Aug 2024</p>
+        <ul>
+          <li>Guided guests, verified tickets, and maintained cleanliness</li>
+          <li>Handled cash and digital transactions at box office</li>
+          <li>Delivered food and ensured hygiene at concessions</li>
+        </ul>
+      </section>
+
+      <section class="section">
+        <h2>Skills</h2>
+        <p><strong>Languages/Tools:</strong> Python, Dart, Flask, Flutter, Java, C++, REST API, JSON, Nmap, Git, React, Azure</p>
+        <p><strong>Practices:</strong> Agile, version control, test-driven logic</p>
+        <p><strong>Technologies:</strong> Network scanning, UI/UX design, basic AI</p>
+        <p><strong>Soft Skills:</strong> Communication, teamwork, adaptability, time management</p>
+      </section>
+    </main>
+  </div>
+</body>
+</html>
